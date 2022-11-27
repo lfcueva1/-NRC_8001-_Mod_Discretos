@@ -2,6 +2,17 @@ import os #importamos os para usar la funcion os.system("pause") y os.system("cl
 import time #importamos time para usar la funcion time.sleep
 import random #importamos random para usar la funcion de generar nuemros aleatorios
 import sys #importamos sys para usar sys.exit()
+"""
+AHORCADO, es un juego de adivinanzas, consiste en pensar una letra por cada intento para tratar de adivinar la palabra 
+dentro de un cierto numero de oportunidades
+
+Autores:
+Luis Cueva
+Lisbeth Carvajal
+Erick Ramirez
+Verisión:
+VER.2
+"""
 
 def dibujo_presentacion_del_juego():
     '''

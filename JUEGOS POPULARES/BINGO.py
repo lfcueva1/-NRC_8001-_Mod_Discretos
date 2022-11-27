@@ -2,6 +2,17 @@ import random #imporatmos random para usar la funcion de generar numeros aleator
 import os     #importamos os para hacer uso de la funcion que limpia la pantalla y pausa en el codigo
 os.system("cls")#esta funcion limpia la pantalla
 
+"""
+Bingoconsiste en ir marcando en nuestro cartón los números que, aleatoriamente, van surgiendo en cada momento. 
+El primero que haga línea gana un premio
+Autores:
+Luis Cueva
+Lisbeth Carvajal
+Erick Ramirez
+Verisión:
+VER.2
+"""
+
 def imprimir_logo_del_juego():
     '''
     Funcion que imprime en letras gigantes "BINGO" en color azul

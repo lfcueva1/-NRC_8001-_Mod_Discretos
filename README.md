@@ -1,5 +1,5 @@
 <div align="center">
-<h1> G-MODELOS DISCRETOS</h3>
+<h1> MODELOS DISCRETOS</h3>
 <div align="center">
 <div align="center">
 <h2>UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE</h2>

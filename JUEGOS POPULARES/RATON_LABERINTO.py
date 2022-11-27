@@ -1,7 +1,7 @@
 import os #importamos os para usar la funcion os.system("pause") y os.system("cls")
 import time #importamos time para usar la funcion time.sleep
 import sys #importamos sys para usar sys.exit()
-os.system("cls")#funcion para limpiar la pantalla
+
 """
 Raton en el laberinto, consiste en mover al raton hasta que este salga del laberinto 
 

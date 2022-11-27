@@ -19,7 +19,7 @@ def dibujo_presentacion_del_juego():
 
     Parametros:
     ------------
-        Esta funcion no retorna ningun tipo de dato.
+        Esta funcion no tiene parametros.
     Retorna:
     ------------
         Esta funcion no retorna ningun tipo de dato.

@@ -3,7 +3,7 @@ import os     #importamos os para hacer uso de la funcion que limpia la pantalla
 os.system("cls")#esta funcion limpia la pantalla
 
 """
-Bingoconsiste en ir marcando en nuestro cartón los números que, aleatoriamente, van surgiendo en cada momento. 
+Bingo, consiste en ir marcando en nuestro cartón los números que, aleatoriamente, van surgiendo en cada momento. 
 El primero que haga línea gana un premio
 Autores:
 Luis Cueva

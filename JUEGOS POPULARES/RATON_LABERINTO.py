@@ -24,7 +24,9 @@ def dibujo_presentacion_del_juego():
     ------------
         Esta funcion no retorna ningun tipo de dato.
     '''
-    print("\033[1;36m")#imprime las letras en color cian
+    
+    #imprime las letras en color cian
+    print("\033[1;36m")
     print("        █████           █████")
     print("       ██    ██       ██     ██")
     print("      ██      ████████        ██")
@@ -57,7 +59,8 @@ def elegir_movimiento_del_raton():
     while True:
         try:
             movimiento_raton=int(input("Elija una opcion: "))
-            break#rempemos ciclo repetitivo
+            #rempemos ciclo repetitivo
+            break
         except ValueError:
             print("No ha ingresado un numero entero.")
     #retornamos la variable movimiento_raton como int
@@ -104,18 +107,25 @@ def movimiento_del_raton_arriba(mapa):
     ------------
         Esta funcion no retorna ningun tipo de dato
     '''
-    raton = 2 #definimos a raton como 2 para distinguirlo dentro del mapa
-    for i in range(len(mapa)):                #segun el tamaño del mapa 
-        for j in range(len(mapa[i])):         #y tamaño de las filas del mapa
-            if mapa[i][j] == raton:           #buscamos la posicion del raton
-                print(i,j)                    #una vez tenemos la posicion del raton
-                a=i                           #igualaremos a y b con i e j
+    
+    #definimos a raton como 2 para distinguirlo dentro del mapa
+    raton = 2 
+    
+    #segun el tamaño del mapa y tamaño de las filas del mapa buscamos la posicion del raton una vez tenemos la posicion del raton
+    #igualaremos a y b con i e j
+    for i in range(len(mapa)):                 
+        for j in range(len(mapa[i])):         
+            if mapa[i][j] == raton:           
+                print(i,j)                
+                a=i                       
                 b=j
-                
-    if(mapa[a-1][b]==1):                      #entonces para mover al rato arriba hacemos uso de la formula (a-1)(b) donde si es igual 1(camino por donde si puede pasar el raton)
-        mapa[a-1][b]=2                        #sera reemplazado 1(camino por donde puede pasar) por 2(raton)
-        mapa[a][b]=1                          #y donde estaba el raton(2) sera reemplazado por camino donde se puede pasar(1)
-                                              #haciendo ver que el raton se ha movido de posicion
+    #entonces para mover al rato arriba hacemos uso de la formula (a-1)(b) donde si es igual 1(camino por donde si puede pasar el raton)      
+    #sera reemplazado 1(camino por donde puede pasar) por 2(raton) y donde estaba el raton(2) sera reemplazado por camino donde se puede pasar(1)
+    #haciendo ver que el raton se ha movido de posicion
+    if(mapa[a-1][b]==1):                      
+        mapa[a-1][b]=2                        
+        mapa[a][b]=1                    
+                                             
 
 def movimiento_del_raton_abajo(mapa):
     '''
@@ -130,18 +140,24 @@ def movimiento_del_raton_abajo(mapa):
     ------------
         Esta funcion no retorna ningun tipo de dato
     '''
-    raton = 2 #definimos a raton como 2 para distinguirlo dentro del mapa
-    for i in range(len(mapa)):                #segun el tamaño del mapa
-        for j in range(len(mapa[i])):         #y tamaño de las filas del mapa
-            if mapa[i][j] == raton:           #buscamos la posicion del raton
-                print(i,j)                    #una vez tenemos la posicion del raton
-                a=i                           #igualaremos a y b con i e j 
+    #definimos a raton como 2 para distinguirlo dentro del mapa
+    raton = 2 
+    
+    #segun el tamaño del mapa y tamaño de las filas del mapa buscamos la posicion del raton una vez tenemos la posicion del raton
+    #igualaremos a y b con i e j
+    for i in range(len(mapa)):              
+        for j in range(len(mapa[i])):       
+            if mapa[i][j] == raton:         
+                print(i,j)               
+                a=i                  
                 b=j                           
-                
-    if(mapa[a+1][b]==1):                      #entonces para mover al rato abajo hacemos uso de la formula (a+1)(b) donde si es igual 1(camino por donde si puede pasar el raton)
-        mapa[a+1][b]=2                        #sera reemplazado 1(camino por donde puede pasar) por 2(raton)
-        mapa[a][b]=1                          #y donde estaba el raton(2) sera reemplazado por camino donde se puede pasar(1)
-                                              #haciendo ver que el raton se ha movido de posicion
+    
+    #entonces para mover al raton abajo hacemos uso de la formula (a+1)(b) donde si es igual 1(camino por donde si puede pasar el raton)      
+    #sera reemplazado 1(camino por donde puede pasar) por 2(raton) y donde estaba el raton(2) sera reemplazado por camino donde se puede pasar(1)
+    #haciendo ver que el raton se ha movido de posicion
+    if(mapa[a+1][b]==1):       
+        mapa[a+1][b]=2                      
+        mapa[a][b]=1                         
 
 def movimiento_del_raton_izquierda(mapa):
     '''
@@ -156,18 +172,25 @@ def movimiento_del_raton_izquierda(mapa):
     -------------
         Esta funcion no retorna ningun tipo de dato
     '''
-    raton = 2 #definimos a raton como 2 para distinguirlo dentro del mapa
-    for i in range(len(mapa)):                #segun el tamaño del mapa
-        for j in range(len(mapa[i])):         #y tamaño de las filas del mapa
-            if mapa[i][j] == raton:           #buscamos la posicion del raton
-                print(i,j)                    #una vez tenemos la posicion del raton
-                a=i                           #igualaremos a y b con i e j
+    
+    #definimos a raton como 2 para distinguirlo dentro del mapa
+    raton = 2 
+    
+    #segun el tamaño del mapa y tamaño de las filas del mapa buscamos la posicion del raton una vez tenemos la posicion del raton
+    #igualaremos a y b con i e j
+    for i in range(len(mapa)):                
+        for j in range(len(mapa[i])):      
+            if mapa[i][j] == raton:        
+                print(i,j)               
+                a=i               
                 b=j
-                
-    if(mapa[a][b-1]==1):                      #entonces para mover al rato abajo hacemos uso de la formula (a)(b-1) donde si es igual 1(camino por donde si puede pasar el raton)
-        mapa[a][b-1]=2                        #sera reemplazado 1(camino por donde puede pasar) por 2(raton)
-        mapa[a][b]=1                          #y donde estaba el raton(2) sera reemplazado por camino donde se puede pasar(1)
-                                              #haciendo ver que el raton se ha movido de posicion
+    #entonces para mover al rato hacia la izquierda hacemos uso de la formula (a)(b-1) donde si es igual 1(camino por donde si puede pasar el raton)      
+    #sera reemplazado 1(camino por donde puede pasar) por 2(raton) y donde estaba el raton(2) sera reemplazado por camino donde se puede pasar(1)
+    #haciendo ver que el raton se ha movido de posicion            
+    if(mapa[a][b-1]==1):                      
+        mapa[a][b-1]=2                       
+        mapa[a][b]=1                       
+                                          
 
 def movimiento_del_raton_derecha(mapa):
     '''
@@ -182,18 +205,24 @@ def movimiento_del_raton_derecha(mapa):
     -------------
         Esta funcion no retorna ningun tipo de dato
     '''
-    raton = 2 #definimos a raton como 2 para distinguirlo dentro del mapa
-    for i in range(len(mapa)):                #segun el tamaño del mapa 
-        for j in range(len(mapa[i])):         #y tamaño de las filas del mapa
-            if mapa[i][j] == raton:           #buscamos la posicion del raton
-                print(i,j)                    #una vez tenemos la posicion del raton
-                a=i                           #igualaremos a y b con i e j
+    
+    #definimos a raton como 2 para distinguirlo dentro del mapa
+    raton = 2 
+    
+    #segun el tamaño del mapa y tamaño de las filas del mapa buscamos la posicion del raton una vez tenemos la posicion del raton
+    #igualaremos a y b con i e j
+    for i in range(len(mapa)):                
+        for j in range(len(mapa[i])):      
+            if mapa[i][j] == raton:          
+                print(i,j)                
+                a=i                       
                 b=j
-                
-    if(mapa[a][b+1]==1):                      #entonces para mover al rato abajo hacemos uso de la formula (a)(b+1) donde si es igual 1(camino por donde si puede pasar el raton)
-        mapa[a][b+1]=2                        #sera reemplazado 1(camino por donde puede pasar) por 2(raton)
-        mapa[a][b]=1                          #y donde estaba el raton(2) sera reemplazado por camino donde se puede pasar(1)
-                                              #haciendo ver que el raton se ha movido de posicion
+    #entonces para mover al rato hacia la derecha hacemos uso de la formula (a)(b+1) donde si es igual 1(camino por donde si puede pasar el raton)      
+    #sera reemplazado 1(camino por donde puede pasar) por 2(raton) y donde estaba el raton(2) sera reemplazado por camino donde se puede pasar(1)
+    #haciendo ver que el raton se ha movido de posicion             
+    if(mapa[a][b+1]==1):                      
+        mapa[a][b+1]=2                        
+        mapa[a][b]=1                        
 
 def mensaje_ganador():
     '''
@@ -208,7 +237,8 @@ def mensaje_ganador():
         Esta funcion no retorna ningun tipo de dato
 
     '''
-    print(chr(27)+"[1;32m")#Print que hace que los siguientes caracteres se impriman en color verde
+    #Print que hace que los siguientes caracteres se impriman en color verde
+    print(chr(27)+"[1;32m")
     print("███████████   ███████████   ██         ██   ███████████   ███████████   ███████████   ███████████")
     print("██            ██       ██   ████       ██   ██       ██   ██                ██        ██")
     print("██            ██       ██   ██ ██      ██   ██       ██   ██                ██        ██")
@@ -230,57 +260,99 @@ if __name__ == '__main__':
         [0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0],
         [0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
-
-    final_laberinto=False #definimos final_laberinto como falso para que el juego siga corriendo hasta llegar al final del laberinto
-    print(chr(27)+"[1;33m"+"BIENVENIDO AL JUEGO DE RATON EN EL LABERINTO") #imprime mensaje de bienvenida en color amarillo
-    dibujo_presentacion_del_juego()#imprimos el dibujo del raton al incio del juego
-    print("")#imprime salto de linea
-    print(chr(27)+"[1;32m") #hacemos que de ahora en adelantes las letras sean color verde
-    os.system("pause") #Pausamos el codigo hasta aplastar una tecla
+    #definimos final_laberinto como falso para que el juego siga corriendo hasta llegar al final del laberinto
+    final_laberinto=False 
+    #imprime mensaje de bienvenida en color amarillo
+    print(chr(27)+"[1;33m"+"BIENVENIDO AL JUEGO DE RATON EN EL LABERINTO")
+    #imprimos el dibujo del raton al incio del juego
+    dibujo_presentacion_del_juego()
+    #imprime salto de linea
+    print("")
+    #hacemos que de ahora en adelantes las letras sean color verde
+    print(chr(27)+"[1;32m") 
+    #Pausamos el codigo hasta aplastar una tecla
+    os.system("pause") 
     print(chr(27)+"[1;37m"+"EMPEZANDO EL JUEGO")
-    time.sleep(1)#hacemos que el codigo tenga un pequeño retraso para simular la carga del juego
-    os.system("cls")#limpiamos pantalla
+    #hacemos que el codigo tenga un pequeño retraso para simular la carga del juego
+    time.sleep(1)
+    #limpiamos pantalla
+    os.system("cls")
 
-
-    print("Ustes es: ",chr(27)+"[1;32m"+"█")#imprimos que el ratos es "█" en color verde
-    imprimir_mapa(mapa)#imprimimos el mapa remplazando los numeros por colores
-    while(final_laberinto==False):#mientras aun no se llegue al final del laberinto entonces:
-        print(chr(27)+"[1;33m"+"Hacia donde quieres mover el raton?")#preguntamos hacia donde quiere mover el raton
-        print("\033[;36m")#cian
-        print("1. Arriba")#imprimimos el menu en color cian
+    #imprimos que el ratos es "█" en color verde
+    print("Ustes es: ",chr(27)+"[1;32m"+"█")
+    #imprimimos el mapa remplazando los numeros por colores
+    imprimir_mapa(mapa)
+    #mientras aun no se llegue al final del laberinto entonces:
+    while(final_laberinto==False):
+        #preguntamos hacia donde quiere mover el raton
+        print(chr(27)+"[1;33m"+"Hacia donde quieres mover el raton?")
+        #cian
+        print("\033[;36m")
+        #imprimimos el menu en color cian
+        print("1. Arriba")
         print("2. Abajo")
         print("3. Izquierda")
         print("4. Derecha")
-
-        mov_raton=elegir_movimiento_del_raton()#llamamos a la funcion elegir_movimiento_del_raton() para igualarla a "mov_raton" una vez el dato ingresado sea validado
-        while (mov_raton<1 or mov_raton>4):#en este ciclo repetitivo validamos que solo se ingrese numeros mayor a 1 o menor a 4
-            mov_raton=elegir_movimiento_del_raton()#en caso de no cumpla entonces tendremos que volver a ingresar un numero
-            
-        if(mov_raton==1):#si el jugador decidió moverse hacia arriba entonces
-            os.system("cls")#limpiamos pantalla
-            movimiento_del_raton_arriba(mapa)#hacemos uso de esta funcion para mover el raton una posicion arriba
-            imprimir_mapa(mapa)#imprimimos el mapa donde se esta jugando con la posicion del raton mas actual
-            if(mapa[6][10]==2):#si el raton llego a esta posicion(final del laberinto) entonces
-                mensaje_ganador()#imprimimos el mensaje ganador
-                sys.exit()#finalizamos la ejecucion del codigo
-        if(mov_raton==2):#si el jugador decidió moverse hacia abajo entonces
-            os.system("cls")#limpiamos pantalla
-            movimiento_del_raton_abajo(mapa)#hacemos uso de esta funcion para mover el raton una posicion abajo
-            imprimir_mapa(mapa)#imprimimos el mapa donde se esta jugando con la posicion del raton mas actual
-            if(mapa[6][10]==2):#si el raton llego a esta posicion(final del laberinto) entonces
-                mensaje_ganador()#imprimimos el mensaje ganador
-                sys.exit()##finalizamos la ejecucion del codigo
-        if(mov_raton==3):#si el jugador decidió moverse hacia la izquierda entonces:
-            os.system("cls")#limpiamos pantalla
-            movimiento_del_raton_izquierda(mapa)#hacemos uso de esta funcion para mover el raton una posicion a la izquierda
-            imprimir_mapa(mapa)#imprimimos el mapa donde se esta jugando con la posicion del raton mas actual
-            if(mapa[6][10]==2):#si el raton llego a esta posicion(final del laberinto) entonces
-                mensaje_ganador()#imprimimos el mensaje ganador
-                sys.exit()##finalizamos la ejecucion del codigo
-        if(mov_raton==4):#si el jugador decidió moverse hacia la derecha entonces
-            os.system("cls")#limpiamos pantalla
-            movimiento_del_raton_derecha(mapa)#hacemos uso de esta funcion para mover el raton una posicion a la derecha
-            imprimir_mapa(mapa)#imprimimos el mapa donde se esta jugando con la posicion del raton mas actual
-            if(mapa[6][10]==2):#si el raton llego a esta posicion(final del laberinto) entonces
-                mensaje_ganador()#imprimimos el mensaje ganador
-                sys.exit()##finalizamos la ejecucion del codigo
+        
+        #llamamos a la funcion elegir_movimiento_del_raton() para igualarla a "mov_raton" una vez el dato ingresado sea validado
+        mov_raton=elegir_movimiento_del_raton()
+        #en este ciclo repetitivo validamos que solo se ingrese numeros mayor a 1 o menor a 4
+        while (mov_raton<1 or mov_raton>4):
+            #en caso de no cumpla entonces tendremos que volver a ingresar un numero
+            mov_raton=elegir_movimiento_del_raton()
+        #si el jugador decidió moverse hacia arriba entonces
+        if(mov_raton==1):
+            #limpiamos pantalla
+            os.system("cls")
+            #hacemos uso de esta funcion para mover el raton una posicion arriba
+            movimiento_del_raton_arriba(mapa)
+            #imprimimos el mapa donde se esta jugando con la posicion del raton mas actual
+            imprimir_mapa(mapa)
+            #si el raton llego a esta posicion(final del laberinto) entonces
+            if(mapa[6][10]==2):
+                #imprimimos el mensaje ganador
+                mensaje_ganador()
+                #finalizamos la ejecucion del codigo
+                sys.exit()
+        #si el jugador decidió moverse hacia abajo entonces
+        if(mov_raton==2):
+            #limpiamos pantalla
+            os.system("cls")
+            #hacemos uso de esta funcion para mover el raton una posicion abajo
+            movimiento_del_raton_abajo(mapa)
+            #imprimimos el mapa donde se esta jugando con la posicion del raton mas actual
+            imprimir_mapa(mapa)
+            #si el raton llego a esta posicion(final del laberinto) entonces
+            if(mapa[6][10]==2):
+                #imprimimos el mensaje ganador
+                mensaje_ganador()
+                #finalizamos la ejecucion del codigo
+                sys.exit()
+        #si el jugador decidió moverse hacia la izquierda entonces:  
+        if(mov_raton==3):
+            #limpiamos pantalla
+            os.system("cls")
+            #hacemos uso de esta funcion para mover el raton una posicion a la izquierda
+            movimiento_del_raton_izquierda(mapa)
+            #imprimimos el mapa donde se esta jugando con la posicion del raton mas actual
+            imprimir_mapa(mapa)
+            #si el raton llego a esta posicion(final del laberinto) entonces
+            if(mapa[6][10]==2):
+                #imprimimos el mensaje ganador
+                mensaje_ganador()
+                #finalizamos la ejecucion del codigo
+                sys.exit()
+        #si el jugador decidió moverse hacia la derecha entonces
+        if(mov_raton==4):
+            #limpiamos pantalla
+            os.system("cls")
+            #hacemos uso de esta funcion para mover el raton una posicion a la derecha
+            movimiento_del_raton_derecha(mapa)
+            #imprimimos el mapa donde se esta jugando con la posicion del raton mas actual
+            imprimir_mapa(mapa)
+            #si el raton llego a esta posicion(final del laberinto) entonces
+            if(mapa[6][10]==2):
+                #imprimimos el mensaje ganador
+                mensaje_ganador()
+                #finalizamos la ejecucion del codigo
+                sys.exit()

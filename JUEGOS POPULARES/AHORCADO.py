@@ -285,9 +285,13 @@ def ingreso_nombre_de_jugadores(nombreJugador):
         Retorna la variable nombreJugador como str.
        
     '''
-    print(chr(27)+"[;36m") #imprime en color cian
-    nombreJugador=input("Ingrese nombre del jugador:")#Variable donde se ingresa el nombre del jugador
-    os.system("cls")#limpia la pantalla
+    
+    #imprime en color cian
+    print(chr(27)+"[;36m") 
+    #Variable donde se ingresa el nombre del jugador
+    nombreJugador=input("Ingrese nombre del jugador:")
+    #limpia la pantalla
+    os.system("cls")
     return nombreJugador
 
 def validacion_de_la_opcion_menu():
@@ -302,13 +306,18 @@ def validacion_de_la_opcion_menu():
     ------------
         Retorna la variable categoria como int.
     '''
-    while True:#para validar usamos un ciclo for donde mientras sea verdad:
+    #para validar usamos un ciclo for donde mientras sea verdad:
+    while True:
         try:
-            categoria=int(input("Elija una opcion: "))#ingresamos un numero
+            #ingresamos un numero
+            categoria=int(input("Elija una opcion: "))
+            #rompemos ciclo repetitivo
             break
-        except ValueError: #si ve que lo que se ha ingresado no es un numero entero entonces imprimira un mensaje de error
+        #si ve que lo que se ha ingresado no es un numero entero entonces imprimira un mensaje de error
+        except ValueError: 
             print("No ha ingresado un numero entero.")
-    return categoria #una vez que el numero sea validado entonces se retornara el numero entero para ser usado en el main
+    #una vez que el numero sea validado entonces se retornara el numero entero para ser usado en el main
+    return categoria 
 
 def validar_letra_ingresada_por_el_usuario(letra):
     '''
@@ -324,12 +333,15 @@ def validar_letra_ingresada_por_el_usuario(letra):
     ------------
         Retorna letra como str
     '''
-    while len(letra) != 1:#Si el tamaño de letra es diferente de uno entonces tendra que volver a ingresar un caracter
+    
+    #Mientras el tamaño de letra es diferente de uno entonces tendra que volver a ingresar un caracter
+    while len(letra) != 1:
         letra = input('Ingrese una letra por favor: ')
     return letra
 
 if __name__ == '__main__':
-    nombre_jugador = ""#esta servira para ingresar el nombre del jugador
+    #esta servira para ingresar el nombre del jugador
+    nombre_jugador = ""
 
     #las 3 siguientes listas son donde guardaremos las palabras que usaremos para el juego
     categoria_frutas = ["manzana","naranja","platano","cerezas"]

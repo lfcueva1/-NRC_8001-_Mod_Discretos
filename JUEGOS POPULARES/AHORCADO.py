@@ -336,37 +336,52 @@ if __name__ == '__main__':
     categoria_instrumentos = ["guitarra","trompeta","saxofon","acordeon"]
     categoria_colores = ["morado","amarillo","azul","marron"]
 
-
-    os.system("cls")#esta funcion limpia la pantalla
-    print(chr(27)+"[1;33m"+"BIENVENIDO(S) AL JUEGO DEL AHORCADO!") #Imprime la bienvenida en color amarillo
-    dibujo_presentacion_del_juego()#imprime el dibujo que aparecera al inicio del juego
-    print(chr(27)+"[1;31m"+"(MAXIMO 1 JUGADOR))") #imprime el numero de jugadores en color rojo
-    print(chr(27)+"[;36m") #con esta linea de ahora en adelante se imprimira las letras en color cian
-    nombre_jugador = ingreso_nombre_de_jugadores(nombre_jugador)#en la variable "nombre_jugador" usaremos una funcion donde ingresaremos el nombre del jugador
-    print("\x1b[1;33m"+"EMPEZANDO EL JUEGO...") #mensaje que imprime inicio del juego
-    time.sleep(1)#hacemos que se agregue un retraso a la ejecucion del codigo 
-    print(chr(27)+"[1;32m"+"",nombre_jugador,",Con que categoria de palabras desea jugar?") #imprimimos el nombre del jugar preguntandole con que categoria desea jugar en color verde
-    print("\033[;36m")#con esta linea de ahora en adelante se imprimira las letras en color cian
+    #esta funcion limpia la pantalla
+    os.system("cls")
+    #Imprime la bienvenida en color amarillo
+    print(chr(27)+"[1;33m"+"BIENVENIDO(S) AL JUEGO DEL AHORCADO!") 
+    #imprime el dibujo que aparecera al inicio del juego
+    dibujo_presentacion_del_juego()
+     #imprime el maximo de jugadores en color rojo
+    print(chr(27)+"[1;31m"+"(MAXIMO 1 JUGADOR))")
+     #con esta linea de ahora en adelante se imprimira las letras en color cian
+    print(chr(27)+"[;36m")
+    #en la variable "nombre_jugador" usaremos una funcion donde ingresaremos una cadena de caracteres la cual sera el nombre del jugador
+    nombre_jugador = ingreso_nombre_de_jugadores(nombre_jugador)
+    #mensaje que imprime inicio del juego
+    print("\x1b[1;33m"+"EMPEZANDO EL JUEGO...") 
+    #hacemos que se agregue un retraso a la ejecucion del codigo
+    time.sleep(1) 
+    #imprimimos el nombre del jugar preguntandole con que categoria desea jugar en color verde
+    print(chr(27)+"[1;32m"+"",nombre_jugador,",Con que categoria de palabras desea jugar?") 
+    #con esta linea de ahora en adelante se imprimira las letras en color cian
+    print("\033[;36m")
 
     #en las siguientes 3 lineas imprimimos las opciones que el jugador podra elegir para jugar
     print("1. Frutas")
     print("2. Instrumentos musicales")
     print("3. colores")
-    opcionMenu=validacion_de_la_opcion_menu()#en la variable opcionMenu la igualaremos a la funcion donde se ingresar un numero entero y este sea validado
+    #en la variable opcionMenu la igualaremos a la funcion donde se ingresar un numero entero y este sea validado
+    opcionMenu=validacion_de_la_opcion_menu()
 
     #en este ciclo repetitivo preguntamos si es que la variable opcionMenu(numero entero) es menor a 1 o mayor a 3 entonces la volveremos a ingresar hasta que rompa el ciclo repetitivo
     while(opcionMenu<1 or opcionMenu>3):
         opcionMenu=validacion_de_la_opcion_menu()
 
-
-    print(chr(27)+"[1;33m") #este print sirve para pintar las letras de color amarillo
+    #este print sirve para pintar las letras de color amarillo
+    print(chr(27)+"[1;33m") 
     print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄")
-
-    if opcionMenu==1:#si el jugador elige jugar con frutas entonces
-        numero_intentos=0 #empezaremos con 0 en el numero de intentos para luego sumarle 1 hasta llegar al 6
-        numero = random.randint(0, 3)#aqui es donde el programa elegira una de las 4 palabras que se encuentren dentro de la categoria frutas
-        palabra=categoria_frutas[numero]#en la variable "palabra" es donde guardaremos la palabra escogida al azar por el programa que esta dentro de la categoria frutas
-        letras=[]#declaramos la lista "letras" la cual usaremos en el siguiente for
+    
+    #si el jugador elige jugar con frutas entonces
+    if opcionMenu==1:
+        #empezaremos con 0 en el numero de intentos para luego sumarle 1 hasta llegar al 6
+        numero_intentos=0 
+        #aqui es donde el programa elegira una de las 4 palabras que se encuentren dentro de la categoria frutas
+        numero = random.randint(0, 3)
+        #en la variable "palabra" es donde guardaremos la palabra escogida al azar por el programa que esta dentro de la categoria frutas
+        palabra=categoria_frutas[numero]
+        #declaramos la lista "letras" la cual usaremos en el siguiente for
+        letras=[]
 
         #en este for usaremos la funcion letra donde separara la variable palabra en letras y una vez este separada cada una
         #sera guardada en la lista letras con la ayuda de la funcion .append()
@@ -374,24 +389,33 @@ if __name__ == '__main__':
             letras.append(letra)
         
         print("ADIVINA LA PALABRA:")
-        dibujo_presentacion_del_juego()#volvemos a imprimir el dibujo del muñeco del ahorcado en blanco para indicar que ha empezado el juego
-        print(chr(27)+"[1;33m") #print para imprimir de ahora en adelante en color amarillo
+        #volvemos a imprimir el dibujo del muñeco del ahorcado en blanco para indicar que ha empezado el juego
+        dibujo_presentacion_del_juego()
+        #print para imprimir de ahora en adelante en color amarillo
+        print(chr(27)+"[1;33m") 
 
         #En este for segun el numero de letras que hay que adivinar se imprimira el caracter '-' para que el jugador sepa cuantas letras debe adivinar
         for i in range(len(letras)):
             print("- ",end="")
-
-        print("")#imprimimos un salto de linea
-        letras_correctas=[]#declaramos la variable letras_correctas como lista en donde cada vez que se acierte una letra sera agregada a esta lista
-        for i in range(len(letras)):#Para este for segun el tamaño de la lista(letras) donde es el numero de letras que tiene la palabra
-            letras_correctas.append("-")#segun el numero de letras en la lista "letras" agregaremos el caracter '-' el cual luego sera reemplazado cada vez que 
-                                        #el jugador acierte una letra
-
-        while numero_intentos<=6:#aqui decimos que mientras el numero de intentos sea menor o igual a 6 entonces
-            letraJugador=validar_letra_ingresada_por_el_usuario('aa')#aqui ingresamos la letra pero usamos la funcion validar_letra_ingresada_por_el_usuario
-                                                                    #para que solo pueda ingresar una letra y encaso de ingresar mas de dos caracteres el programa
-                                                                    #volvera a pedir que ingrese una letra
-            print("")#imprimimos salto de linea
+        #imprimimos un salto de linea
+        print("")
+        #declaramos la variable letras_correctas como lista en donde cada vez que se acierte una letra sera agregada a esta lista
+        letras_correctas=[]
+        #Para este for segun el tamaño de la lista(letras) donde es el numero de letras que tiene la palabra
+        for i in range(len(letras)):
+            #segun el numero de letras en la lista "letras" agregaremos el caracter '-' el cual luego sera reemplazado cada vez que 
+            #el jugador acierte una letra
+            letras_correctas.append("-")
+            
+        #aqui decimos que mientras el numero de intentos sea menor o igual a 6 entonces
+        while numero_intentos<=6:
+            #aqui ingresamos la letra pero usamos la funcion validar_letra_ingresada_por_el_usuario
+            #para que solo pueda ingresar una letra y encaso de ingresar mas de dos caracteres el programa
+            #volvera a pedir que ingrese una letra
+            letraJugador=validar_letra_ingresada_por_el_usuario('aa')
+                                                
+            #imprimimos salto de linea
+            print("")
 
             #En este for ponemos un condicional if donde la letra que ingresó el jugador se encuentra dentro de la lista "letras" en donde esta la palabra
             #a adivinar entonces lo que se ingreso se guardara en la lista letras correctas reemplazando el caracter '-' por la letra que ingreso el jugador
@@ -440,10 +464,12 @@ if __name__ == '__main__':
                     elif(numero_intentos==6):
                         dibujo_fallo_intento_seis()
                         sys.exit()
-
-    if opcionMenu==2: #si el jugador elige jugar con instrumentos musicales entonces
-        numero_intentos=0#empezaremos con 0 en el numero de intentos para luego sumarle 1 hasta llegar al 6
-        numero = random.randint(0, 3)#aqui es donde el programa elegira una de las 4 palabras que se encuentren dentro de la categoria de instrumentos musicales
+    #si el jugador elige jugar con instrumentos musicales entonces
+    if opcionMenu==2: 
+        #empezaremos con 0 en el numero de intentos para luego sumarle 1 hasta llegar al 6
+        numero_intentos=0
+        #aqui es donde el programa elegira una de las 4 palabras que se encuentren dentro de la categoria de instrumentos musicales
+        numero = random.randint(0, 3)
         palabra=categoria_instrumentos[numero]#en la variable "palabra" es donde guardaremos la palabra escogida al azar por el programa que esta dentro de la categoria instrumentos musicales
         letras=[]#declaramos la lista "letras" la cual usaremos en el siguiente for
         
@@ -453,23 +479,31 @@ if __name__ == '__main__':
             letras.append(letra)
         
         print("ADIVINA LA PALABRA:")
-        dibujo_presentacion_del_juego()#volvemos a imprimir el dibujo del muñeco del ahorcado en blanco para indicar que ha empezado el juego
-        print(chr(27)+"[1;33m") #print para imprimir de ahora en adelante en color amarillo
+        #volvemos a imprimir el dibujo del muñeco del ahorcado en blanco para indicar que ha empezado el juego
+        dibujo_presentacion_del_juego()
+        #print para imprimir de ahora en adelante en color amarillo
+        print(chr(27)+"[1;33m") 
 
         #En este for segun el numero de letras que hay que adivinar se imprimira el caracter '-' para que el jugador sepa cuantas letras debe adivinar
         for i in range(len(letras)):
             print("- ",end="")
-
-        print("")#imprimimos un salto de linea
-        letras_correctas=[]#declaramos la variable letras_correctas como lista en donde cada vez que se acierte una letra sera agregada a esta lista
-        for i in range(len(letras)):#Para este for segun el tamaño de la lista(letras) donde es el numero de letras que tiene la palabra
-            letras_correctas.append("-")#segun el numero de letras en la lista "letras" agregaremos el caracter '-' el cual luego sera reemplazado cada vez que 
-                                        #el jugador acierte una letra
-        while numero_intentos<=6:#aqui decimos que mientras el numero de intentos sea menor o igual a 6 entonces
-            letraJugador=validar_letra_ingresada_por_el_usuario('aa')#aqui ingresamos la letra pero usamos la funcion validar_letra_ingresada_por_el_usuario
-                                                                    #para que solo pueda ingresar una letra y encaso de ingresar mas de dos caracteres el programa
-                                                                    #volvera a pedir que ingrese una letra
-            print("")#imprimimos salto de linea
+        #imprimimos un salto de linea
+        print("")
+        #declaramos la variable letras_correctas como lista en donde cada vez que se acierte una letra sera agregada a esta lista
+        letras_correctas=[]
+        #Para este for segun el tamaño de la lista(letras) donde es el numero de letras que tiene la palabra
+        for i in range(len(letras)):
+            #segun el numero de letras en la lista "letras" agregaremos el caracter '-' el cual luego sera reemplazado cada vez que 
+            #el jugador acierte una letra
+            letras_correctas.append("-")
+        #aqui decimos que mientras el numero de intentos sea menor o igual a 6 entonces
+        while numero_intentos<=6:
+            #aqui ingresamos la letra pero usamos la funcion validar_letra_ingresada_por_el_usuario
+            #para que solo pueda ingresar una letra y encaso de ingresar mas de dos caracteres el programa
+            #volvera a pedir que ingrese una letra
+            letraJugador=validar_letra_ingresada_por_el_usuario('aa')
+            #imprimimos salto de linea
+            print("")
 
             #En este for ponemos un condicional if donde la letra que ingresó el jugador se encuentra dentro de la lista "letras" en donde esta la palabra
             #a adivinar entonces lo que se ingreso se guardara en la lista letras correctas reemplazando el caracter '-' por la letra que ingreso el jugador
@@ -518,12 +552,16 @@ if __name__ == '__main__':
                         dibujo_fallo_intento_seis()
                         letraJugador=validar_letra_ingresada_por_el_usuario('aa')
                         sys.exit()
-
-    if opcionMenu==3:#si el jugador elige jugar con colores entonces
-        numero_intentos=0#empezaremos con 0 en el numero de intentos para luego sumarle 1 hasta llegar al 6
-        numero = random.randint(0, 3)#aqui es donde el programa elegira una de las 4 palabras que se encuentren dentro de la categoria colores
-        palabra=categoria_colores[numero]#en la variable "palabra" es donde guardaremos la palabra escogida al azar por el programa que esta dentro de la categoria colores
-        letras=[]#declaramos la lista "letras" la cual usaremos en el siguiente for
+    #si el jugador elige jugar con colores entonces
+    if opcionMenu==3:
+        #empezaremos con 0 en el numero de intentos para luego sumarle 1 hasta llegar al 6
+        numero_intentos=0
+        #aqui es donde el programa elegira una de las 4 palabras que se encuentren dentro de la categoria colores
+        numero = random.randint(0, 3)
+        #en la variable "palabra" es donde guardaremos la palabra escogida al azar por el programa que esta dentro de la categoria colores
+        palabra=categoria_colores[numero]
+        #declaramos la lista "letras" la cual usaremos en el siguiente for
+        letras=[]
         
         #en este for usaremos la funcion letra donde separara la variable palabra en letras y una vez este separada cada una
         #sera guardada en la lista letras con la ayuda de la funcion .append()
@@ -531,24 +569,32 @@ if __name__ == '__main__':
             letras.append(letra)
         
         print("ADIVINA LA PALABRA:")
-        dibujo_presentacion_del_juego()#volvemos a imprimir el dibujo del muñeco del ahorcado en blanco para indicar que ha empezado el juego
-        print(chr(27)+"[1;33m") #print para imprimir de ahora en adelante en color amarillo
+        #volvemos a imprimir el dibujo del muñeco del ahorcado en blanco para indicar que ha empezado el juego
+        dibujo_presentacion_del_juego()
+        #print para imprimir de ahora en adelante en color amarillo
+        print(chr(27)+"[1;33m") 
 
         #En este for segun el numero de letras que hay que adivinar se imprimira el caracter '-' para que el jugador sepa cuantas letras debe adivinar
         for i in range(len(letras)):
             print("- ",end="")
-
-        print("")#imprimimos un salto de linea
-        letras_correctas=[]#declaramos la variable letras_correctas como lista en donde cada vez que se acierte una letra sera agregada a esta lista
-
-        for i in range(len(letras)):#Para este for segun el tamaño de la lista(letras) donde es el numero de letras que tiene la palabra
-            letras_correctas.append("-")#segun el numero de letras en la lista "letras" agregaremos el caracter '-' el cual luego sera reemplazado cada vez que 
-                                        #el jugador acierte una letra
-        while numero_intentos<=6:#aqui decimos que mientras el numero de intentos sea menor o igual a 6 entonces
-            letraJugador=validar_letra_ingresada_por_el_usuario('aa')#aqui ingresamos la letra pero usamos la funcion validar_letra_ingresada_por_el_usuario
-                                                                    #para que solo pueda ingresar una letra y encaso de ingresar mas de dos caracteres el programa
-                                                                    #volvera a pedir que ingrese una letra
-            print("")#imprimimos salto de linea
+        #imprimimos un salto de linea
+        print("")
+        
+        #declaramos la variable letras_correctas como lista en donde cada vez que se acierte una letra sera agregada a esta lista
+        letras_correctas=[]
+        #Para este for segun el tamaño de la lista(letras) donde es el numero de letras que tiene la palabra
+        for i in range(len(letras)):
+            #segun el numero de letras en la lista "letras" agregaremos el caracter '-' el cual luego sera reemplazado cada vez que 
+            #el jugador acierte una letra
+            letras_correctas.append("-")
+        #aqui decimos que mientras el numero de intentos sea menor o igual a 6 entonces
+        while numero_intentos<=6:
+            #aqui ingresamos la letra pero usamos la funcion validar_letra_ingresada_por_el_usuario
+            #para que solo pueda ingresar una letra y encaso de ingresar mas de dos caracteres el programa
+            #volvera a pedir que ingrese una letra
+            letraJugador=validar_letra_ingresada_por_el_usuario('aa')
+            #imprimimos salto de linea
+            print("")
 
             #En este for ponemos un condicional if donde la letra que ingresó el jugador se encuentra dentro de la lista "letras" en donde esta la palabra
             #a adivinar entonces lo que se ingreso se guardara en la lista letras correctas reemplazando el caracter '-' por la letra que ingreso el jugador
@@ -597,5 +643,6 @@ if __name__ == '__main__':
                         dibujo_fallo_intento_seis()
                         letraJugador=validar_letra_ingresada_por_el_usuario('aa')
                         sys.exit()
-        print("")           
-        print(letras)#imprimimos la lista letras para ver como termino el juego
+        print("")  
+        #imprimimos la lista letras para ver como termino el juego
+        print(letras)

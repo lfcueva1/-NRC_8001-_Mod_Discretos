@@ -623,7 +623,7 @@ if __name__ == '__main__':
                     sys.exit()
                 #si el jugador ingresa una letra que no este en la palabra para adivinar entonces aumentaremos 1 mas al numero de intentos y:
                 if(letraJugador not in letras):
-                    numero_intentos=numero_intentos
+                    numero_intentos=numero_intentos+1
                     #si el numero de intentos es 1 se imprimira el dibujo del muñeco del ahorcado con la parte inferior en rojo y 
                     #volveremos a pedir que el usuario ingrese una letra
                     if(numero_intentos==1):

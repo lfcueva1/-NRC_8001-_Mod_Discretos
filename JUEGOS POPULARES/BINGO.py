@@ -768,286 +768,550 @@ if __name__ == '__main__':
                                             
             #ahora se imprimiran las letras en color amarillo
             print("\x1b[1;33m"+"-------------------------")
-
-            if(carton1[1]==0 and carton1[6]==0 and carton1[11]==0 and carton1[16]==0 and carton1[21]==0):#si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break #con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[2]==0 and carton1[7]==0 and carton1[12]==0 and carton1[17]==0 and carton1[22]==0):#si las posiciones 2,7,12,17,22 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[3]==0 and carton1[8]==0 and carton1[18]==0 and carton1[23]==0): #si las posiciones 3,8,18,23 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[4]==0 and carton1[9]==0 and carton1[14]==0 and carton1[19]==0 and carton1[24]==0):#si las posiciones 4,9,14,19,24 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[5]==0 and carton1[10]==0 and carton1[15]==0 and carton1[20]==0 and carton1[25]==0):#si las posiciones 5,10,15,20,25 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[1]==0 and carton1[2]==0 and carton1[3]==0 and carton1[4]==0 and carton1[5]==0):#si las posiciones 1,2,3,4,5 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[6]==0 and carton1[7]==0 and carton1[8]==0 and carton1[9]==0 and carton1[10]==0):#si las posiciones 6,7,8,9,10 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[11]==0 and carton1[12]==0  and carton1[14]==0 and carton1[15]==0):#si las posiciones 11,12,14,15 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[16]==0 and carton1[17]==0 and carton1[18]==0 and carton1[19]==0 and carton1[20]==0):#si las posiciones 16,17,18,19,20 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[21]==0 and carton1[22]==0 and carton1[23]==0 and carton1[24]==0 and carton1[25]==0):#si las posiciones 21,22,23,24,25 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[1]==0 and carton1[7]==0  and carton1[19]==0 and carton1[25]==0):#si las posiciones 1,7,19,25 son igual a cero(una equis)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[5]==0 and carton1[9]==0  and carton1[17]==0 and carton1[21]==0):#si las posiciones 5,9,17,21 son igual a cero(una equis)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            if(bolaGenerada in carton2):#si el numero de la variable generada se encuentra dentro de la lista carton1 entonces
-                carton2[carton2.index(bolaGenerada)]=0 #con la ayuda de la funcion index la cual nos dice la posicion de donde se encuentra el valor de la
-                                            #variable bolaGenerada en la lista vamos a reemplazar ese numero a cero lo cual significa que ya ha sido marcada
-            
-            if(carton2[1]==0 and carton2[6]==0 and carton2[11]==0 and carton2[16]==0 and carton2[21]==0):#si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[2]==0 and carton2[7]==0 and carton2[12]==0 and carton2[17]==0 and carton2[22]==0):#si las posiciones 2,7,12,17,22 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[3]==0 and carton2[8]==0 and carton2[18]==0 and carton2[23]==0):#si las posiciones 3,8,18,23 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[4]==0 and carton2[9]==0 and carton2[14]==0 and carton2[19]==0 and carton2[24]==0):#si las posiciones 4,9,14,19,24 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[5]==0 and carton2[10]==0 and carton2[15]==0 and carton2[20]==0 and carton2[25]==0):#si las posiciones 5,10,15,20,25 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[1]==0 and carton2[2]==0 and carton2[3]==0 and carton2[4]==0 and carton2[5]==0):#si las posiciones 1,2,3,4,5 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[6]==0 and carton2[7]==0 and carton2[8]==0 and carton2[9]==0 and carton2[10]==0):#si las posiciones 6,7,8,9,10 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[11]==0 and carton2[12]==0  and carton2[14]==0 and carton2[15]==0):#si las posiciones 11,12,14,15 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[16]==0 and carton2[17]==0 and carton2[18]==0 and carton2[19]==0 and carton2[20]==0):#si las posiciones 16,17,18,19,20 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[21]==0 and carton2[22]==0 and carton2[23]==0 and carton2[24]==0 and carton2[25]==0):#si las posiciones 21,22,23,24,25 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[1]==0 and carton2[7]==0  and carton2[19]==0 and carton2[25]==0):#si las posiciones 1,7,19,25 son igual a cero(una equis)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[5]==0 and carton2[9]==0  and carton2[17]==0 and carton2[21]==0):#si las posiciones 5,9,17,21 son igual a cero(una equis)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            if(bolaGenerada in carton3):#si el numero de la variable generada se encuentra dentro de la lista carton1 entonces
-                carton3[carton3.index(bolaGenerada)]=0#con la ayuda de la funcion index la cual nos dice la posicion de donde se encuentra el valor de la 
-                                        #variable bolaGenerada en la lista vamos a reemplazar ese numero a cero lo cual significa que ya ha sido marcada
-            
-            if(carton3[1]==0 and carton3[6]==0 and carton3[11]==0 and carton3[16]==0 and carton3[21]==0): #si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado           
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[2]==0 and carton3[7]==0 and carton3[12]==0 and carton3[17]==0 and carton3[22]==0):
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[3]==0 and carton3[8]==0 and carton3[18]==0 and carton3[23]==0):
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[4]==0 and carton3[9]==0 and carton3[14]==0 and carton3[19]==0 and carton3[24]==0):
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[5]==0 and carton3[10]==0 and carton3[15]==0 and carton3[20]==0 and carton3[25]==0):
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[1]==0 and carton3[2]==0 and carton3[3]==0 and carton3[4]==0 and carton3[5]==0):
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[6]==0 and carton3[7]==0 and carton3[8]==0 and carton3[9]==0 and carton3[10]==0):
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[11]==0 and carton3[12]==0  and carton3[14]==0 and carton3[15]==0):#si las posiciones 11,12,14,15 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[16]==0 and carton3[17]==0 and carton3[18]==0 and carton3[19]==0 and carton3[20]==0):
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[21]==0 and carton3[22]==0 and carton3[23]==0 and carton3[24]==0 and carton3[25]==0):
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[1]==0 and carton3[7]==0  and carton3[19]==0 and carton3[25]==0):
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[5]==0 and carton3[9]==0  and carton3[17]==0 and carton3[21]==0):
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            imprimir_cartones_de_los_jugadores(carton1,carton2,carton3,carton4,nJugadores)#se imprime los cartones segun el numero de jugadores
-        if(nJugadores==4):
-            if(bolaGenerada in carton1):               #si el numero de la variable generada se encuentra dentro de la lista carton1 entonces
-                carton1[carton1.index(bolaGenerada)]=0 #con la ayuda de la funcion index la cual nos dice la posicion de donde se encuentra el valor de la 
-                                            #variable bolaGenerada en la lista vamos a reemplazar ese numero a cero lo cual significa que ya ha sido marcada
+            #si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
+            if(carton1[1]==0 and carton1[6]==0 and carton1[11]==0 and carton1[16]==0 and carton1[21]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break 
+            #si las posiciones 2,7,12,17,22 son igual a cero(una linea vertical)    
+            elif(carton1[2]==0 and carton1[7]==0 and carton1[12]==0 and carton1[17]==0 and carton1[22]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 3,8,18,23 son igual a cero(una linea vertical)    
+            elif(carton1[3]==0 and carton1[8]==0 and carton1[18]==0 and carton1[23]==0): 
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 4,9,14,19,24 son igual a cero(una linea vertical)   
+            elif(carton1[4]==0 and carton1[9]==0 and carton1[14]==0 and carton1[19]==0 and carton1[24]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 5,10,15,20,25 son igual a cero(una linea vertical)    
+            elif(carton1[5]==0 and carton1[10]==0 and carton1[15]==0 and carton1[20]==0 and carton1[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 1,2,3,4,5 son igual a cero(una linea horizontal)    
+            elif(carton1[1]==0 and carton1[2]==0 and carton1[3]==0 and carton1[4]==0 and carton1[5]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 6,7,8,9,10 son igual a cero(una linea horizontal)    
+            elif(carton1[6]==0 and carton1[7]==0 and carton1[8]==0 and carton1[9]==0 and carton1[10]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 11,12,14,15 son igual a cero(una linea horizontal)     
+            elif(carton1[11]==0 and carton1[12]==0  and carton1[14]==0 and carton1[15]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 16,17,18,19,20 son igual a cero(una linea horizontal)  
+            elif(carton1[16]==0 and carton1[17]==0 and carton1[18]==0 and carton1[19]==0 and carton1[20]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 21,22,23,24,25 son igual a cero(una linea horizontal)    
+            elif(carton1[21]==0 and carton1[22]==0 and carton1[23]==0 and carton1[24]==0 and carton1[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 1,7,19,25 son igual a cero(una equis)
+            elif(carton1[1]==0 and carton1[7]==0  and carton1[19]==0 and carton1[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 5,9,17,21 son igual a cero(una equis)
+            elif(carton1[5]==0 and carton1[9]==0  and carton1[17]==0 and carton1[21]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si el numero de la variable generada se encuentra dentro de la lista carton1 entonces
+            if(bolaGenerada in carton2):
+                #con la ayuda de la funcion index la cual nos dice la posicion de donde se encuentra el valor de la variable bolaGenerada en la lista
+                # vamos a reemplazar ese numero a cero lo cual significa que ya ha sido marcada
+                carton2[carton2.index(bolaGenerada)]=0 
                                             
-            print("\x1b[1;33m"+"-------------------------")#ahora se imprimiran las letras en color amarillo
-
-            if(carton1[1]==0 and carton1[6]==0 and carton1[11]==0 and carton1[16]==0 and carton1[21]==0):#si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break #con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[2]==0 and carton1[7]==0 and carton1[12]==0 and carton1[17]==0 and carton1[22]==0):#si las posiciones 2,7,12,17,22 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
+            #si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
+            if(carton2[1]==0 and carton2[6]==0 and carton2[11]==0 and carton2[16]==0 and carton2[21]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 2,7,12,17,22 son igual a cero(una linea vertical)   
+            elif(carton2[2]==0 and carton2[7]==0 and carton2[12]==0 and carton2[17]==0 and carton2[22]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 3,8,18,23 son igual a cero(una linea vertical)    
+            elif(carton2[3]==0 and carton2[8]==0 and carton2[18]==0 and carton2[23]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 4,9,14,19,24 son igual a cero(una linea vertical)    
+            elif(carton2[4]==0 and carton2[9]==0 and carton2[14]==0 and carton2[19]==0 and carton2[24]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
                 break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[3]==0 and carton1[8]==0 and carton1[18]==0 and carton1[23]==0): #si las posiciones 3,8,18,23 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[4]==0 and carton1[9]==0 and carton1[14]==0 and carton1[19]==0 and carton1[24]==0):#si las posiciones 4,9,14,19,24 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[5]==0 and carton1[10]==0 and carton1[15]==0 and carton1[20]==0 and carton1[25]==0):#si las posiciones 5,10,15,20,25 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[1]==0 and carton1[2]==0 and carton1[3]==0 and carton1[4]==0 and carton1[5]==0):#si las posiciones 1,2,3,4,5 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[6]==0 and carton1[7]==0 and carton1[8]==0 and carton1[9]==0 and carton1[10]==0):#si las posiciones 6,7,8,9,10 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])#se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[11]==0 and carton1[12]==0  and carton1[14]==0 and carton1[15]==0):#si las posiciones 11,12,14,15 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[16]==0 and carton1[17]==0 and carton1[18]==0 and carton1[19]==0 and carton1[20]==0):#si las posiciones 16,17,18,19,20 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[21]==0 and carton1[22]==0 and carton1[23]==0 and carton1[24]==0 and carton1[25]==0):#si las posiciones 21,22,23,24,25 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[1]==0 and carton1[7]==0  and carton1[19]==0 and carton1[25]==0):#si las posiciones 1,7,19,25 son igual a cero(una equis)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton1[5]==0 and carton1[9]==0  and carton1[17]==0 and carton1[21]==0):#si las posiciones 5,9,17,21 son igual a cero(una equis)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            if(bolaGenerada in carton2):#si el numero de la variable generada se encuentra dentro de la lista carton1 entonces
-                carton2[carton2.index(bolaGenerada)]=0#con la ayuda de la funcion index la cual nos dice la posicion de donde se encuentra el valor de la
-                                        #variable bolaGenerada en la lista vamos a reemplazar ese numero a cero lo cual significa que ya ha sido marcada 
+            #si las posiciones 5,10,15,20,25 son igual a cero(una linea vertical)
+            elif(carton2[5]==0 and carton2[10]==0 and carton2[15]==0 and carton2[20]==0 and carton2[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 1,2,3,4,5 son igual a cero(una linea horizontal)    
+            elif(carton2[1]==0 and carton2[2]==0 and carton2[3]==0 and carton2[4]==0 and carton2[5]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 6,7,8,9,10 son igual a cero(una linea horizontal)    
+            elif(carton2[6]==0 and carton2[7]==0 and carton2[8]==0 and carton2[9]==0 and carton2[10]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 11,12,14,15 son igual a cero(una linea horizontal)    
+            elif(carton2[11]==0 and carton2[12]==0  and carton2[14]==0 and carton2[15]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 16,17,18,19,20 son igual a cero(una linea horizontal)    
+            elif(carton2[16]==0 and carton2[17]==0 and carton2[18]==0 and carton2[19]==0 and carton2[20]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 21,22,23,24,25 son igual a cero(una linea horizontal)
+            elif(carton2[21]==0 and carton2[22]==0 and carton2[23]==0 and carton2[24]==0 and carton2[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 1,7,19,25 son igual a cero(una equis)   
+            elif(carton2[1]==0 and carton2[7]==0  and carton2[19]==0 and carton2[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 5,9,17,21 son igual a cero(una equis)    
+            elif(carton2[5]==0 and carton2[9]==0  and carton2[17]==0 and carton2[21]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si el numero de la variable generada se encuentra dentro de la lista carton1 entonces    
+            if(bolaGenerada in carton3):
+                #con la ayuda de la funcion index la cual nos dice la posicion de donde se encuentra el valor de la variable bolaGenerada en la lista 
+                #vamos a reemplazar ese numero a cero lo cual significa que ya ha sido marcada
+                carton3[carton3.index(bolaGenerada)]=0 
+                                        
+            #si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
+            if(carton3[1]==0 and carton3[6]==0 and carton3[11]==0 and carton3[16]==0 and carton3[21]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado 
+                mensaje_ganador()          
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
             
-            if(carton2[1]==0 and carton2[6]==0 and carton2[11]==0 and carton2[16]==0 and carton2[21]==0):#si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[2]==0 and carton2[7]==0 and carton2[12]==0 and carton2[17]==0 and carton2[22]==0):#si las posiciones 2,7,12,17,22 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[3]==0 and carton2[8]==0 and carton2[18]==0 and carton2[23]==0):#si las posiciones 3,8,18,23 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[4]==0 and carton2[9]==0 and carton2[14]==0 and carton2[19]==0 and carton2[24]==0):#si las posiciones 4,9,14,19,24 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[5]==0 and carton2[10]==0 and carton2[15]==0 and carton2[20]==0 and carton2[25]==0):#si las posiciones 5,10,15,20,25 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[1]==0 and carton2[2]==0 and carton2[3]==0 and carton2[4]==0 and carton2[5]==0):#si las posiciones 1,2,3,4,5 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[6]==0 and carton2[7]==0 and carton2[8]==0 and carton2[9]==0 and carton2[10]==0):#si las posiciones 6,7,8,9,10 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[11]==0 and carton2[12]==0  and carton2[14]==0 and carton2[15]==0):#si las posiciones 11,12,14,15 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[16]==0 and carton2[17]==0 and carton2[18]==0 and carton2[19]==0 and carton2[20]==0):#si las posiciones 16,17,18,19,20 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[21]==0 and carton2[22]==0 and carton2[23]==0 and carton2[24]==0 and carton2[25]==0):#si las posiciones 21,22,23,24,25 son igual a cero(una linea horizontal)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[1]==0 and carton2[7]==0  and carton2[19]==0 and carton2[25]==0):#si las posiciones 1,7,19,25 son igual a cero(una equis)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton2[5]==0 and carton2[9]==0  and carton2[17]==0 and carton2[21]==0):#si las posiciones 5,9,17,21 son igual a cero(una equis)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            if(bolaGenerada in carton3):#si el numero de la variable generada se encuentra dentro de la lista carton1 entonces
-                carton3[carton3.index(bolaGenerada)]=0#con la ayuda de la funcion index la cual nos dice la posicion de donde se encuentra el valor de la 
-                                        #variable bolaGenerada en la lista vamos a reemplazar ese numero a cero lo cual significa que ya ha sido marcada
+            elif(carton3[2]==0 and carton3[7]==0 and carton3[12]==0 and carton3[17]==0 and carton3[22]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+                
+            elif(carton3[3]==0 and carton3[8]==0 and carton3[18]==0 and carton3[23]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+                
+            elif(carton3[4]==0 and carton3[9]==0 and carton3[14]==0 and carton3[19]==0 and carton3[24]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+                
+            elif(carton3[5]==0 and carton3[10]==0 and carton3[15]==0 and carton3[20]==0 and carton3[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+                
+            elif(carton3[1]==0 and carton3[2]==0 and carton3[3]==0 and carton3[4]==0 and carton3[5]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            elif(carton3[6]==0 and carton3[7]==0 and carton3[8]==0 and carton3[9]==0 and carton3[10]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 11,12,14,15 son igual a cero(una linea horizontal)   
+            elif(carton3[11]==0 and carton3[12]==0  and carton3[14]==0 and carton3[15]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
             
-            if(carton3[1]==0 and carton3[6]==0 and carton3[11]==0 and carton3[16]==0 and carton3[21]==0): #si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado           
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[2]==0 and carton3[7]==0 and carton3[12]==0 and carton3[17]==0 and carton3[22]==0):#si las posiciones 2,7,12,17,22 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[3]==0 and carton3[8]==0 and carton3[18]==0 and carton3[23]==0):#si las posiciones 3,8,18,23 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
-                break#con este break rompemos el ciclo repetitivo finalizando el programa
-            elif(carton3[4]==0 and carton3[9]==0 and carton3[14]==0 and carton3[19]==0 and carton3[24]==0):#si las posiciones 4,9,14,19,24 son igual a cero(una linea vertical)
-                mensaje_ganador()#entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
-                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) #se imprime el nombre del jugador ganador en color amarillo
+            elif(carton3[16]==0 and carton3[17]==0 and carton3[18]==0 and carton3[19]==0 and carton3[20]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+                
+            elif(carton3[21]==0 and carton3[22]==0 and carton3[23]==0 and carton3[24]==0 and carton3[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+                
+            elif(carton3[1]==0 and carton3[7]==0  and carton3[19]==0 and carton3[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+                
+            elif(carton3[5]==0 and carton3[9]==0  and carton3[17]==0 and carton3[21]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #se imprime los cartones segun el numero de jugadores    
+            imprimir_cartones_de_los_jugadores(carton1,carton2,carton3,carton4,nJugadores)
+        #si el numero de jugadores es 4 entonces:    
+        if(nJugadores==4):
+            #si el numero de la variable generada se encuentra dentro de la lista carton1 entonces
+            if(bolaGenerada in carton1): 
+                #con la ayuda de la funcion index la cual nos dice la posicion de donde se encuentra el valor de la variable bolaGenerada en la lista
+                # vamos a reemplazar ese numero a cero lo cual significa que ya ha sido marcada
+                carton1[carton1.index(bolaGenerada)]=0  
+                                            
+            #ahora se imprimiran las letras en color amarillo                               
+            print("\x1b[1;33m"+"-------------------------")
+            #si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
+            if(carton1[1]==0 and carton1[6]==0 and carton1[11]==0 and carton1[16]==0 and carton1[21]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break 
+            #si las posiciones 2,7,12,17,22 son igual a cero(una linea vertical)
+            elif(carton1[2]==0 and carton1[7]==0 and carton1[12]==0 and carton1[17]==0 and carton1[22]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 3,8,18,23 son igual a cero(una linea vertical)
+            elif(carton1[3]==0 and carton1[8]==0 and carton1[18]==0 and carton1[23]==0): 
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 4,9,14,19,24 son igual a cero(una linea vertical)    
+            elif(carton1[4]==0 and carton1[9]==0 and carton1[14]==0 and carton1[19]==0 and carton1[24]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 5,10,15,20,25 son igual a cero(una linea vertical)    
+            elif(carton1[5]==0 and carton1[10]==0 and carton1[15]==0 and carton1[20]==0 and carton1[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 1,2,3,4,5 son igual a cero(una linea horizontal)    
+            elif(carton1[1]==0 and carton1[2]==0 and carton1[3]==0 and carton1[4]==0 and carton1[5]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 6,7,8,9,10 son igual a cero(una linea horizontal)
+            elif(carton1[6]==0 and carton1[7]==0 and carton1[8]==0 and carton1[9]==0 and carton1[10]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 11,12,14,15 son igual a cero(una linea horizontal)    
+            elif(carton1[11]==0 and carton1[12]==0  and carton1[14]==0 and carton1[15]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 16,17,18,19,20 son igual a cero(una linea horizontal)
+            elif(carton1[16]==0 and carton1[17]==0 and carton1[18]==0 and carton1[19]==0 and carton1[20]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 21,22,23,24,25 son igual a cero(una linea horizontal)    
+            elif(carton1[21]==0 and carton1[22]==0 and carton1[23]==0 and carton1[24]==0 and carton1[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 1,7,19,25 son igual a cero(una equis)   
+            elif(carton1[1]==0 and carton1[7]==0  and carton1[19]==0 and carton1[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 5,9,17,21 son igual a cero(una equis)    
+            elif(carton1[5]==0 and carton1[9]==0  and carton1[17]==0 and carton1[21]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 1 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[0]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si el numero de la variable generada se encuentra dentro de la lista carton1 entonces   
+            if(bolaGenerada in carton2):
+                #con la ayuda de la funcion index la cual nos dice la posicion de donde se encuentra el valor de la variable bolaGenerada en la lista
+                # vamos a reemplazar ese numero a cero lo cual significa que ya ha sido marcada 
+                carton2[carton2.index(bolaGenerada)]=0
+                                        
+            #si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
+            if(carton2[1]==0 and carton2[6]==0 and carton2[11]==0 and carton2[16]==0 and carton2[21]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 2,7,12,17,22 son igual a cero(una linea vertical)
+            elif(carton2[2]==0 and carton2[7]==0 and carton2[12]==0 and carton2[17]==0 and carton2[22]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 3,8,18,23 son igual a cero(una linea vertical)    
+            elif(carton2[3]==0 and carton2[8]==0 and carton2[18]==0 and carton2[23]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 4,9,14,19,24 son igual a cero(una linea vertical)
+            elif(carton2[4]==0 and carton2[9]==0 and carton2[14]==0 and carton2[19]==0 and carton2[24]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 5,10,15,20,25 son igual a cero(una linea vertical)    
+            elif(carton2[5]==0 and carton2[10]==0 and carton2[15]==0 and carton2[20]==0 and carton2[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 1,2,3,4,5 son igual a cero(una linea horizontal)    
+            elif(carton2[1]==0 and carton2[2]==0 and carton2[3]==0 and carton2[4]==0 and carton2[5]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 6,7,8,9,10 son igual a cero(una linea horizontal)    
+            elif(carton2[6]==0 and carton2[7]==0 and carton2[8]==0 and carton2[9]==0 and carton2[10]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 11,12,14,15 son igual a cero(una linea horizontal)    
+            elif(carton2[11]==0 and carton2[12]==0  and carton2[14]==0 and carton2[15]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 16,17,18,19,20 son igual a cero(una linea horizontal)
+            elif(carton2[16]==0 and carton2[17]==0 and carton2[18]==0 and carton2[19]==0 and carton2[20]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 21,22,23,24,25 son igual a cero(una linea horizontal)    
+            elif(carton2[21]==0 and carton2[22]==0 and carton2[23]==0 and carton2[24]==0 and carton2[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 1,7,19,25 son igual a cero(una equis)    
+            elif(carton2[1]==0 and carton2[7]==0  and carton2[19]==0 and carton2[25]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 5,9,17,21 son igual a cero(una equis)    
+            elif(carton2[5]==0 and carton2[9]==0  and carton2[17]==0 and carton2[21]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 2 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[1]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si el numero de la variable generada se encuentra dentro de la lista carton1 entonces   
+            if(bolaGenerada in carton3):
+                #con la ayuda de la funcion index la cual nos dice la posicion de donde se encuentra el valor de la variable bolaGenerada en la lista 
+                #vamos a reemplazar ese numero a cero lo cual significa que ya ha sido marcada
+                carton3[carton3.index(bolaGenerada)]=0
+                                        
+            #si las posiciones 1,6,11,16,21 son igual a cero(una linea vertical)
+            if(carton3[1]==0 and carton3[6]==0 and carton3[11]==0 and carton3[16]==0 and carton3[21]==0): 
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado 
+                mensaje_ganador()     
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 2,7,12,17,22 son igual a cero(una linea vertical)    
+            elif(carton3[2]==0 and carton3[7]==0 and carton3[12]==0 and carton3[17]==0 and carton3[22]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 3,8,18,23 son igual a cero(una linea vertical)   
+            elif(carton3[3]==0 and carton3[8]==0 and carton3[18]==0 and carton3[23]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2])
+                #con este break rompemos el ciclo repetitivo finalizando el programa
+                break
+            #si las posiciones 4,9,14,19,24 son igual a cero(una linea vertical)    
+            elif(carton3[4]==0 and carton3[9]==0 and carton3[14]==0 and carton3[19]==0 and carton3[24]==0):
+                #entonces se imprime la palabra bingo como señal de que el jugador 3 ha ganado
+                mensaje_ganador()
+                #se imprime el nombre del jugador ganador en color amarillo
+                print(chr(27)+"[1;33m"+"EL GANADOR ES: ",nombresJugadores[2]) 
                 #con este break rompemos el ciclo repetitivo finalizando el programa
                 break
             #si las posiciones 5,10,15,20,25 son igual a cero(una linea vertical)

@@ -312,8 +312,6 @@ if __name__ == '__main__':
     #imprimimos el numero de cartones segun el numero de participantes
     imprimir_cartones_de_los_jugadores(carton1,carton2,carton3,nJugadores)
     
-    #pausamos el codigo hasta que se presione una tecla
-    os.system("Pause")
     #imprimimos el mensaje de empezar el juego en color verde
     print(chr(27)+"[1;32m"+"EMPEZANDO EL JUEGO...") 
     #pausamos el codigo hasta que se presione una tecla

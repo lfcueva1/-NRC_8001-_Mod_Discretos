@@ -193,7 +193,7 @@ def dibujo_letra_equivocada(numero_intentos):
 
     Parametros:
     ------------
-        Esta funcion no tiene parametros.
+        numero_intentos : int.
     Retorna:
     ------------
         Esta funcion no retorna ningun tipo de dato.

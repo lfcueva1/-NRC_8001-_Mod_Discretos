@@ -395,7 +395,6 @@ if __name__ == '__main__':
     carton1=[]
     carton2=[]
     carton3=[]
-    carton4=[] 
     #se declara la lista bombo en donde se generaran los numeros del 1 al 99 para poder jugar el bingo
     bombo=[]
     #En esta lista es en donde se guardaran el numero de nombres ingresados por el o los usuarios(donde el maximo de nombres sera 4)

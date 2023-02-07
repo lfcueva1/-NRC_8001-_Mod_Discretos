@@ -1,0 +1,5 @@
+Para usar el programa instale la libreria networkx con el siguiente comando:
+pip install networkx
+Luis Cueva
+Nrc: 8001
+3er parcial

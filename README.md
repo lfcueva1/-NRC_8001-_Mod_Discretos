@@ -16,6 +16,6 @@
 <h3>NRC 8001</h3>
 <h3>  </h3>
 <p>Luis Fernando Cueva Flores</p>
-<p>/////////////</p>
+<p>PARCIAL 3</p>
 
 <br>

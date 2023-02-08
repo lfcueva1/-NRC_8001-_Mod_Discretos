@@ -806,7 +806,7 @@ def calcular_costo(dia,horario,camino):
     #declaramos variable costo en cero para usarla como contador
     costo=0
     #si usa el transporte de lunes a vieres antes de las 5 odespues de las 9 o si lo usa sabado y domingo antes de las 5 o despues de las 8
-    if((dia==1 and horario<5 and horario>21) or (dia==2 and horario<5 and horario>21) or (dia==3 and horario<5 and horario>21) or (dia==4 and horario<5 and horario>21) or (dia==5 and horario<5 and horario>21) or (dia==6 and horario<5 and horario>20) or (dia==7 and horario<5 and horario>20)):
+    if((dia==1 and horario>21) or (dia==2 and horario>21) or (dia==3 and horario>21) or (dia==4 and horario>21) or (dia==5 and horario>21) or (dia==6 and horario>20) or (dia==7 and horario>20)):
         #imprimir mensajes de que las estaciones estan cerradas
         print("Las estaciones a esa hora estan cerradas")
         print("Abriendo estaciones...")
